@@ -1,1 +1,2 @@
-print("Welcome to the fastapi world!!")
+def Hello():
+    print("Hello")
