@@ -1,0 +1,17 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "pylint.ignorePatterns": [
+    "**/site-packages/**/*.py",
+    ".vscode/*.py",
+    ".venv/*"
+  ],
+  "pylint.args": [
+    "--rcfile=./.pylintrc"
+  ]
+}
