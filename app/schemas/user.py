@@ -7,9 +7,7 @@ class UserBaseSchema(BaseModel):
     email: EmailStr = Field(..., title="User's Email Address")
     role: str = Field(default="Customer", title="User's Role")
     photo: str | None = Field(default=None, title="URL of the User's Profile Photo")
-    created_at: datetime | None = Field(
-        default=None, title="Timestamp of User Creation"
-    )
+    created_at: datetime | None = Field(default=None, title="Timestamp of User Creation")
     updated_at: datetime | None = Field(default=None, title="Timestamp of Last Update")
 
     class Config:
