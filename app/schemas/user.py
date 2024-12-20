@@ -1,5 +1,5 @@
 from datetime import datetime
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class UserBaseSchema(BaseModel):
   name: str
@@ -11,3 +11,8 @@ class UserBaseSchema(BaseModel):
 
   class Config:
     orm_mode = True
+
+class CreateUserSchema(UserBaseSchema):
+  password: str = Field(..., min_length=8)
+  password_confirm: str
+  verified: bool = False
