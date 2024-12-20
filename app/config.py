@@ -7,6 +7,8 @@ class Settings(BaseModel):
     REFRESH_TOKEN_EXPIRES_IN: int
     ACCESS_TOKEN_EXPIRES_IN: int
     JWT_ALGORITHM: str
+
+    MONGO_DB: str
     class Config:
         env_file = './.env'
 
