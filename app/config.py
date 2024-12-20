@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-class Settings(BaseModel): # pylint: disable=too-few-public-methods
+class Settings(BaseModel):  # pylint: disable=too-few-public-methods
     DATABASE_URL: str
 
     REFRESH_TOKEN_EXPIRES_IN: int
@@ -10,7 +10,7 @@ class Settings(BaseModel): # pylint: disable=too-few-public-methods
 
     MONGO_DB: str
 
-    class Config: # pylint: disable=too-few-public-methods
+    class Config:  # pylint: disable=too-few-public-methods
         env_file = "./.env"
 
 
