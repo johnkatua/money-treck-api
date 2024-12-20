@@ -3,7 +3,7 @@ import pymongo
 from app.config import settings
 
 client = mongo_client.MongoClient(settings.DATABASE_URL)
-print('Connect to MongoDB...')
+print("Connect to MongoDB...")
 
 db = client[settings.MONGO_DB]
 User = db.users

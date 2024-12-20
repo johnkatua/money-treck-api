@@ -9,8 +9,9 @@ class Settings(BaseModel):
     JWT_ALGORITHM: str
 
     MONGO_DB: str
+
     class Config:
-        env_file = './.env'
+        env_file = "./.env"
 
 
 settings = Settings()
