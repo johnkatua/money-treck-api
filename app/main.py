@@ -4,5 +4,5 @@ app = FastAPI()
 
 
 @app.get("/api/v1/healthchecker")
-def root():
+def root() -> dict[str, str]:
     return {"msg": "API app and running"}
